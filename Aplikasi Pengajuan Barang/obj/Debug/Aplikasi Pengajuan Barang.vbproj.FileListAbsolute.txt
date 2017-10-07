@@ -1,0 +1,28 @@
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.exe.config
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.exe
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.pdb
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.xml
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Bunifu_UI_v1.4.dll
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\MetroFramework.Design.dll
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormLogin.resources
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.Resources.resources
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.vbproj.GenerateResource.Cache
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.exe
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.xml
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.pdb
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormMaster.resources
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.vbprojResolveAssemblyReference.cache
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataBarang.resources
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataPemohonvb.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPemeriksaanBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPermintaanBarang.resources
+C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPenerimaanBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataRegistrasiUser.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanDataBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanDataPemohon.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPemeriksaanBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPenerimaanBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPermintaanBarang.resources
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.cache
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.compiled
+C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb
