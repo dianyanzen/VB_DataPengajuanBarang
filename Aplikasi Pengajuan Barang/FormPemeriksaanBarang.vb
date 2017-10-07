@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
 Public Class FormPemeriksaanBarang
-    Public stat_pm As Integer
+    Public stat_pm As String
     Public OleDb, koneksi As String
     Public conn As OleDb.OleDbConnection
     Public cmd As OleDb.OleDbCommand
@@ -11,7 +11,7 @@ Public Class FormPemeriksaanBarang
     Public nama_petugas As String
     Public is_search As Boolean
     Public Sub konek()
-        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb"
+        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_barang.mdb"
         conn = New OleDb.OleDbConnection(koneksi)
     End Sub
     Public Sub petugas_input()
@@ -91,14 +91,14 @@ Public Class FormPemeriksaanBarang
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.Checked = True Then
             CheckBox3.Checked = False
-            stat_pm = 1
+            stat_pm = "Disetujui"
         End If
     End Sub
 
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         If CheckBox3.Checked = True Then
             CheckBox2.Checked = False
-            stat_pm = 0
+            stat_pm = "Ditolak"
         End If
 
     End Sub
@@ -115,11 +115,11 @@ Public Class FormPemeriksaanBarang
                 MsgBox("Data Belum Lengkap", MsgBoxStyle.Critical, "Perhatian")
             Else
                 If CheckBox3.Checked = True Then
-                    stat_pm = 0
+                    stat_pm = "Ditolak"
                 ElseIf CheckBox3.Checked = False Then
-                    stat_pm = 1
+                    stat_pm = "Disetujui"
                 Else
-                    stat_pm = 0
+                    stat_pm = "Ditolak"
                 End If
                 OleDb = "select * from data_pemeriksaan where kode_pemeriksaan = '" & txtkodepemeriksaan.Text & "' or kode_permintaan = '" & cmbkodepermintaan.Text & "'"
                 conn.Open()
@@ -157,11 +157,11 @@ Public Class FormPemeriksaanBarang
         Else
             Try
                 If CheckBox3.Checked = True Then
-                    stat_pm = 0
+                    stat_pm = "Ditolak"
                 ElseIf CheckBox3.Checked = False Then
-                    stat_pm = 1
+                    stat_pm = "Disetujui"
                 Else
-                    stat_pm = 0
+                    stat_pm = "Ditolak"
                 End If
                 OleDb = "select * from data_pemeriksaan where kode_pemeriksaan = '" & txtkodepemeriksaan.Text & "'"
                 conn.Open()
@@ -227,7 +227,7 @@ Public Class FormPemeriksaanBarang
                 txtnamapemohon.Text = RTrim(rd("nama_pemohon"))
                 txtjenisbarang.Text = RTrim(rd("jenis_barang"))
                 stat_pm = RTrim(rd("status_pemeriksaan"))
-                If stat_pm = 0 Then
+                If stat_pm = "Ditolak" Then
                     CheckBox3.Checked = True
                 Else
                     CheckBox2.Checked = True
@@ -354,7 +354,7 @@ Public Class FormPemeriksaanBarang
         txtjumlah.Text = dg.CurrentRow.Cells(4).Value
         txtjenisbarang.Text = dg.CurrentRow.Cells(5).Value
         stat_pm = dg.CurrentRow.Cells(6).Value
-        If stat_pm = 0 Then
+        If stat_pm = "Ditolak" Then
             CheckBox3.Checked = True
         Else
             CheckBox2.Checked = True
@@ -364,4 +364,6 @@ Public Class FormPemeriksaanBarang
     Private Sub BunifuImageButton7_Click(sender As Object, e As EventArgs) Handles BunifuImageButton7.Click
         cari()
     End Sub
+
+  
 End Class

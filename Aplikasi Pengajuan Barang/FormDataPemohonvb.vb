@@ -9,7 +9,7 @@ Public Class FormDataPemohonvb
     Public ttabel As New DataTable
     Public nama_petugas As String
     Public Sub konek()
-        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb"
+        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_barang.mdb"
         conn = New OleDb.OleDbConnection(koneksi)
     End Sub
     Public Sub petugas_input()

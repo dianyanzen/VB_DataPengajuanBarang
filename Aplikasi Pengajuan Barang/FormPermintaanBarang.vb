@@ -9,8 +9,9 @@ Public Class FormPermintaanBarang
     Public ttabel As New DataTable
     Public nama_petugas As String
     Public is_search As Boolean
+    Public kode_barang As String
     Public Sub konek()
-        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb"
+        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_barang.mdb"
         conn = New OleDb.OleDbConnection(koneksi)
     End Sub
     Public Sub petugas_input()
@@ -41,6 +42,7 @@ Public Class FormPermintaanBarang
             dg.Columns(4).HeaderText = "Jenis Barang"
             dg.Columns(5).HeaderText = "Tanggal Input"
             dg.Columns(6).HeaderText = "Petugas Input"
+            dg.Columns(7).HeaderText = "Kode Barang"
 
             dg.AutoResizeColumns()
             dg.AlternatingRowsDefaultCellStyle.BackColor = Color.Aqua
@@ -128,11 +130,12 @@ Public Class FormPermintaanBarang
         konek()
         Try
             If cmbnamabarang.Text <> "--Pilih Nama Barang--" And is_search = False Then
-                OleDb = "select top 1 jenis_barang, jumlah_barang from data_barang where nama_barang = '" & cmbnamabarang.Text & "'"
+                OleDb = "select top 1 kode_barang, jenis_barang, jumlah_barang from data_barang where nama_barang = '" & cmbnamabarang.Text & "'"
                 conn.Open()
                 cmd = New OleDb.OleDbCommand(OleDb, conn)
                 rd = cmd.ExecuteReader
                 If rd.Read Then
+                    kode_barang = RTrim(rd("kode_barang"))
                     txtjumlah.Text = RTrim(rd("jumlah_barang"))
                     txtjenisbarang.Text = RTrim(rd("jenis_barang"))
                 Else
@@ -161,19 +164,19 @@ Public Class FormPermintaanBarang
             ElseIf cmbnamapemohon.Text = "--Pilih Nama Pemohon--" Then
                 MsgBox("Data Belum Lengkap", MsgBoxStyle.Critical, "Perhatian")
             Else
-                OleDb = "select * from data_permintaan where kode_permintaan = '" & txtkodepermintaan.Text & "'"
+                OleDb = "select * from data_permintaan where kode_permintaan = '" & txtkodepermintaan.Text & "'  or kode_barang = '" & kode_barang & "'"
                 conn.Open()
                 cmd = New OleDb.OleDbCommand(OleDb, conn)
                 rd = cmd.ExecuteReader
                 If rd.Read Then
-                    MsgBox("Data Sudah Ada !", MsgBoxStyle.Critical, "Perhatian")
+                    MsgBox("Data Sudah Ada Atau Barang Sudah Di Pesan !", MsgBoxStyle.Critical, "Perhatian")
                     rd.Close()
                     conn.Close()
                     bersih()
                 Else
                     conn.Close()
                     conn.Open()
-                    OleDb = "insert into data_permintaan values('" & txtkodepermintaan.Text & "','" & cmbnamabarang.Text & "','" & cmbnamapemohon.Text & "' ,'" & txtjumlah.Text & "','" & txtjenisbarang.Text & "','" & nowdate & "','" & nama_petugas & "')"
+                    OleDb = "insert into data_permintaan values('" & txtkodepermintaan.Text & "','" & cmbnamabarang.Text & "','" & cmbnamapemohon.Text & "' ,'" & txtjumlah.Text & "','" & txtjenisbarang.Text & "','" & nowdate & "','" & nama_petugas & "','" & kode_barang & "')"
                     cmd = New OleDb.OleDbCommand(OleDb, conn)
                     cmd.ExecuteNonQuery()
                     MsgBox("Data Berhasil Di Simpan", MsgBoxStyle.Information, "Save Data")
@@ -203,7 +206,7 @@ Public Class FormPermintaanBarang
                 If rd.Read Then
                     conn.Close()
                     conn.Open()
-                    OleDb = "update data_permintaan set nama_barang ='" & cmbnamabarang.Text & "' , nama_pemohon ='" & cmbnamapemohon.Text & "', jumlah ='" & txtjumlah.Text & "', jenis_barang ='" & txtjenisbarang.Text & "'  where kode_permintaan ='" & txtkodepermintaan.Text & "'"
+                    OleDb = "update data_permintaan set nama_barang ='" & cmbnamabarang.Text & "' , nama_pemohon ='" & cmbnamapemohon.Text & "', jumlah ='" & txtjumlah.Text & "', jenis_barang ='" & txtjenisbarang.Text & "' , kode_barang = '" & kode_barang & "' where kode_permintaan ='" & txtkodepermintaan.Text & "'"
                     cmd = New OleDb.OleDbCommand(OleDb, conn)
                     cmd.ExecuteNonQuery()
                     MsgBox("Data Berhasil Di Rubah", MsgBoxStyle.Information, "Update Data")
@@ -304,6 +307,9 @@ Public Class FormPermintaanBarang
         cmbnamapemohon.Text = dg.CurrentRow.Cells(2).Value
         txtjumlah.Text = dg.CurrentRow.Cells(3).Value
         txtjenisbarang.Text = dg.CurrentRow.Cells(4).Value
+        'If dg.CurrentRow.Cells(7).Value <> "" Then
+        '    kode_barang = dg.CurrentRow.Cells(7).Value
+        'End If
     End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click

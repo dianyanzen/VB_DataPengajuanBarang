@@ -24,7 +24,7 @@ Partial Class LaporanDataBarang
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LaporanDataBarang))
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -37,16 +37,14 @@ Partial Class LaporanDataBarang
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.tglakhir = New System.Windows.Forms.DateTimePicker()
+        Me.tglawal = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.Data_Barang = New Aplikasi_Pengajuan_Barang.Data_Barang()
-        Me.DataBarangBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel2.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
@@ -55,8 +53,6 @@ Partial Class LaporanDataBarang
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Data_Barang, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataBarangBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -184,19 +180,19 @@ Partial Class LaporanDataBarang
         Me.BunifuCustomLabel1.TabIndex = 74
         Me.BunifuCustomLabel1.Text = "Dari Tanggal"
         '
-        'DateTimePicker2
+        'tglakhir
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(4, 105)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker2.TabIndex = 73
+        Me.tglakhir.Location = New System.Drawing.Point(4, 105)
+        Me.tglakhir.Name = "tglakhir"
+        Me.tglakhir.Size = New System.Drawing.Size(200, 20)
+        Me.tglakhir.TabIndex = 73
         '
-        'DateTimePicker1
+        'tglawal
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(4, 66)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 72
+        Me.tglawal.Location = New System.Drawing.Point(4, 66)
+        Me.tglawal.Name = "tglawal"
+        Me.tglawal.Size = New System.Drawing.Size(200, 20)
+        Me.tglawal.TabIndex = 72
         '
         'Panel1
         '
@@ -247,12 +243,14 @@ Partial Class LaporanDataBarang
         '
         'ReportViewer1
         '
-        ReportDataSource1.Name = "Data_Barang"
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Bottom
+        ReportDataSource2.Name = "Data_Barang"
+        ReportDataSource2.Value = Nothing
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Aplikasi_Pengajuan_Barang.Data_Barangrdlc.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 146)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(738, 198)
+        Me.ReportViewer1.Size = New System.Drawing.Size(738, 505)
         Me.ReportViewer1.TabIndex = 80
         '
         'BunifuDragControl1
@@ -262,22 +260,12 @@ Partial Class LaporanDataBarang
         Me.BunifuDragControl1.TargetControl = Me.Panel1
         Me.BunifuDragControl1.Vertical = True
         '
-        'Data_Barang
-        '
-        Me.Data_Barang.DataSetName = "Data_Barang"
-        Me.Data_Barang.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataBarangBindingSource
-        '
-        Me.DataBarangBindingSource.DataMember = "Data_Barang"
-        Me.DataBarangBindingSource.DataSource = Me.Data_Barang
-        '
         'LaporanDataBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(738, 344)
+        Me.ClientSize = New System.Drawing.Size(738, 651)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel11)
@@ -285,15 +273,14 @@ Partial Class LaporanDataBarang
         Me.Controls.Add(Me.BunifuCustomLabel4)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Controls.Add(Me.DateTimePicker2)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.tglakhir)
+        Me.Controls.Add(Me.tglawal)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LaporanDataBarang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LaporanDataBarang"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -305,8 +292,6 @@ Partial Class LaporanDataBarang
         Me.Panel1.PerformLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Data_Barang, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataBarangBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -324,13 +309,11 @@ Partial Class LaporanDataBarang
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents tglakhir As System.Windows.Forms.DateTimePicker
+    Friend WithEvents tglawal As System.Windows.Forms.DateTimePicker
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
-    Friend WithEvents Data_Barang As Aplikasi_Pengajuan_Barang.Data_Barang
-    Friend WithEvents DataBarangBindingSource As System.Windows.Forms.BindingSource
 End Class

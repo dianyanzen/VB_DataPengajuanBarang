@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
 Public Class FormPenerimaanBarang
-    Public stat_prm As Integer
+    Public stat_prm As String
     Public OleDb, koneksi As String
     Public conn As OleDb.OleDbConnection
     Public cmd As OleDb.OleDbCommand
@@ -11,7 +11,7 @@ Public Class FormPenerimaanBarang
     Public nama_petugas As String
     Public is_search As Boolean
     Public Sub konek()
-        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb"
+        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_barang.mdb"
         conn = New OleDb.OleDbConnection(koneksi)
     End Sub
     Private Sub FormPenerimaanBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -120,14 +120,14 @@ Public Class FormPenerimaanBarang
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.Checked = True Then
             CheckBox3.Checked = False
-            stat_prm = 0
+            stat_prm = "Belum Dikirim"
         End If
     End Sub
 
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         If CheckBox3.Checked = True Then
             CheckBox2.Checked = False
-            stat_prm = 1
+            stat_prm = "Dikirim"
         End If
     End Sub
     Sub savebtn()
@@ -143,11 +143,11 @@ Public Class FormPenerimaanBarang
                 MsgBox("Data Belum Lengkap", MsgBoxStyle.Critical, "Perhatian")
             Else
                 If CheckBox3.Checked = True Then
-                    stat_prm = 0
+                    stat_prm = "Belum Dikirim"
                 ElseIf CheckBox3.Checked = False Then
-                    stat_prm = 1
+                    stat_prm = "Dikirim"
                 Else
-                    stat_prm = 0
+                    stat_prm = "Belum Dikirim"
                 End If
                 OleDb = "select * from data_penerimaan where kode_penerimaan = '" & txtkodepenerimaan.Text & "' or kode_pemeriksaan = '" & cmbkodepemeriksaan.Text & "'"
                 conn.Open()
@@ -185,11 +185,11 @@ Public Class FormPenerimaanBarang
             MsgBox("Data Belum Lengkap", MsgBoxStyle.Critical, "Perhatian")
         Else
             If CheckBox3.Checked = True Then
-                stat_prm = 0
+                stat_prm = "Belum Dikirim"
             ElseIf CheckBox3.Checked = False Then
-                stat_prm = 1
+                stat_prm = "Dikirim"
             Else
-                stat_prm = 0
+                stat_prm = "Belum Dikirim"
             End If
             Try
                 OleDb = "select * from data_penerimaan where kode_penerimaan = '" & txtkodepenerimaan.Text & "'"
@@ -257,11 +257,11 @@ Public Class FormPenerimaanBarang
             txtjumlah.Text = RTrim(rd("jumlah"))
             txtjenisbarang.Text = RTrim(rd("jenis_barang"))
                 stat_prm = RTrim(rd("status_penerimaan"))
-            If stat_prm = 0 Then
-                CheckBox3.Checked = True
-            Else
-                CheckBox2.Checked = True
-            End If
+                If stat_prm = "Belum Dikirim" Then
+                    CheckBox3.Checked = True
+                Else
+                    CheckBox2.Checked = True
+                End If
             Else
             MsgBox("Data Tidak Ada !", MsgBoxStyle.Critical, "Perhatian")
             is_search = False
@@ -332,7 +332,7 @@ Public Class FormPenerimaanBarang
         txtjumlah.Text = dg.CurrentRow.Cells(5).Value
         txtjenisbarang.Text = dg.CurrentRow.Cells(6).Value
         stat_prm = dg.CurrentRow.Cells(7).Value
-        If stat_prm = 0 Then
+        If stat_prm = "Belum Dikirim" Then
             CheckBox3.Checked = True
         Else
             CheckBox2.Checked = True
@@ -352,11 +352,11 @@ Public Class FormPenerimaanBarang
                     txtnamapenerima.Text = RTrim(rd("nama_pemohon"))
                     txtjumlah.Text = RTrim(rd("jumlah"))
                     txtjenisbarang.Text = RTrim(rd("jenis_barang"))
-                    Dim status_pemeriksaan As Integer = RTrim(rd("status_pemeriksaan"))
-                    If status_pemeriksaan = 0 Then
+                    Dim status_pemeriksaan As String = RTrim(rd("status_pemeriksaan"))
+                    If status_pemeriksaan = "Ditolak" Then
                         txtstatuspemeriksaan.Text = "Ditolak"
                     Else
-                        txtstatuspemeriksaan.Text = "Diterima"
+                        txtstatuspemeriksaan.Text = "Disetujui"
                     End If
                 Else
                     MsgBox("Data Tidak Ada !", MsgBoxStyle.Critical, "Perhatian")

@@ -8,7 +8,7 @@ Public Class FormDataRegistrasiUser
     Public dtadapter As OleDb.OleDbDataAdapter
     Public ttabel As New DataTable
     Public Sub konek()
-        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dian Yanzen\Documents\Visual Studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb"
+        koneksi = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_barang.mdb"
         conn = New OleDb.OleDbConnection(koneksi)
     End Sub
 

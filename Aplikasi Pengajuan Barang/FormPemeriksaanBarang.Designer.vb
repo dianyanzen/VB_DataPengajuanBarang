@@ -26,19 +26,25 @@ Partial Class FormPemeriksaanBarang
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPemeriksaanBarang))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton7 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txt_cari = New System.Windows.Forms.TextBox()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel10 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuImageButton6 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuImageButton5 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton4 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.dg = New System.Windows.Forms.DataGridView()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtkodepemeriksaan = New System.Windows.Forms.TextBox()
@@ -64,20 +70,20 @@ Partial Class FormPemeriksaanBarang
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.cmbkodepermintaan = New System.Windows.Forms.ComboBox()
         Me.BunifuCustomLabel11 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuImageButton7 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton6 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton5 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton4 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel11.SuspendLayout()
+        CType(Me.BunifuImageButton7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
+        CType(Me.BunifuImageButton6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
+        CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
+        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -86,13 +92,7 @@ Partial Class FormPemeriksaanBarang
         Me.Panel12.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
-        CType(Me.BunifuImageButton7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -109,6 +109,21 @@ Partial Class FormPemeriksaanBarang
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(182, 28)
         Me.Panel11.TabIndex = 23
+        '
+        'BunifuImageButton7
+        '
+        Me.BunifuImageButton7.BackColor = System.Drawing.Color.BlueViolet
+        Me.BunifuImageButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton7.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.search
+        Me.BunifuImageButton7.ImageActive = Nothing
+        Me.BunifuImageButton7.Location = New System.Drawing.Point(158, 4)
+        Me.BunifuImageButton7.Name = "BunifuImageButton7"
+        Me.BunifuImageButton7.Padding = New System.Windows.Forms.Padding(5)
+        Me.BunifuImageButton7.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton7.TabIndex = 17
+        Me.BunifuImageButton7.TabStop = False
+        Me.BunifuImageButton7.Zoom = 10
         '
         'txt_cari
         '
@@ -153,6 +168,21 @@ Partial Class FormPemeriksaanBarang
         Me.BunifuCustomLabel10.TabIndex = 16
         Me.BunifuCustomLabel10.Text = "Keluar"
         '
+        'BunifuImageButton6
+        '
+        Me.BunifuImageButton6.BackColor = System.Drawing.Color.BlueViolet
+        Me.BunifuImageButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton6.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.sign_out
+        Me.BunifuImageButton6.ImageActive = Nothing
+        Me.BunifuImageButton6.Location = New System.Drawing.Point(4, 3)
+        Me.BunifuImageButton6.Name = "BunifuImageButton6"
+        Me.BunifuImageButton6.Padding = New System.Windows.Forms.Padding(5)
+        Me.BunifuImageButton6.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuImageButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton6.TabIndex = 15
+        Me.BunifuImageButton6.TabStop = False
+        Me.BunifuImageButton6.Zoom = 10
+        '
         'BunifuCustomLabel8
         '
         Me.BunifuCustomLabel8.AutoSize = True
@@ -185,6 +215,21 @@ Partial Class FormPemeriksaanBarang
         Me.BunifuCustomLabel9.TabIndex = 16
         Me.BunifuCustomLabel9.Text = "Hapus"
         '
+        'BunifuImageButton5
+        '
+        Me.BunifuImageButton5.BackColor = System.Drawing.Color.BlueViolet
+        Me.BunifuImageButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton5.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.trash_o
+        Me.BunifuImageButton5.ImageActive = Nothing
+        Me.BunifuImageButton5.Location = New System.Drawing.Point(4, 3)
+        Me.BunifuImageButton5.Name = "BunifuImageButton5"
+        Me.BunifuImageButton5.Padding = New System.Windows.Forms.Padding(5)
+        Me.BunifuImageButton5.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton5.TabIndex = 15
+        Me.BunifuImageButton5.TabStop = False
+        Me.BunifuImageButton5.Zoom = 10
+        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.BlueViolet
@@ -195,6 +240,21 @@ Partial Class FormPemeriksaanBarang
         Me.Panel8.Size = New System.Drawing.Size(79, 28)
         Me.Panel8.TabIndex = 31
         '
+        'BunifuImageButton4
+        '
+        Me.BunifuImageButton4.BackColor = System.Drawing.Color.BlueViolet
+        Me.BunifuImageButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton4.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.save
+        Me.BunifuImageButton4.ImageActive = Nothing
+        Me.BunifuImageButton4.Location = New System.Drawing.Point(4, 3)
+        Me.BunifuImageButton4.Name = "BunifuImageButton4"
+        Me.BunifuImageButton4.Padding = New System.Windows.Forms.Padding(5)
+        Me.BunifuImageButton4.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton4.TabIndex = 15
+        Me.BunifuImageButton4.TabStop = False
+        Me.BunifuImageButton4.Zoom = 10
+        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.BlueViolet
@@ -204,6 +264,21 @@ Partial Class FormPemeriksaanBarang
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(79, 28)
         Me.Panel7.TabIndex = 30
+        '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.BlueViolet
+        Me.BunifuImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton2.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.edit
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(4, 3)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Padding = New System.Windows.Forms.Padding(5)
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(20, 20)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 15
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
         '
         'dg
         '
@@ -247,6 +322,19 @@ Partial Class FormPemeriksaanBarang
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(732, 43)
         Me.Panel1.TabIndex = 18
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(702, 3)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(27, 17)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 8
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
         '
         'BunifuDragControl1
         '
@@ -498,81 +586,6 @@ Partial Class FormPemeriksaanBarang
         Me.BunifuCustomLabel11.TabIndex = 27
         Me.BunifuCustomLabel11.Text = "Kode Permintaan"
         '
-        'BunifuImageButton7
-        '
-        Me.BunifuImageButton7.BackColor = System.Drawing.Color.BlueViolet
-        Me.BunifuImageButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BunifuImageButton7.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.search
-        Me.BunifuImageButton7.ImageActive = Nothing
-        Me.BunifuImageButton7.Location = New System.Drawing.Point(158, 4)
-        Me.BunifuImageButton7.Name = "BunifuImageButton7"
-        Me.BunifuImageButton7.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuImageButton7.Size = New System.Drawing.Size(20, 20)
-        Me.BunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton7.TabIndex = 17
-        Me.BunifuImageButton7.TabStop = False
-        Me.BunifuImageButton7.Zoom = 10
-        '
-        'BunifuImageButton6
-        '
-        Me.BunifuImageButton6.BackColor = System.Drawing.Color.BlueViolet
-        Me.BunifuImageButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BunifuImageButton6.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.sign_out
-        Me.BunifuImageButton6.ImageActive = Nothing
-        Me.BunifuImageButton6.Location = New System.Drawing.Point(4, 3)
-        Me.BunifuImageButton6.Name = "BunifuImageButton6"
-        Me.BunifuImageButton6.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuImageButton6.Size = New System.Drawing.Size(20, 20)
-        Me.BunifuImageButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton6.TabIndex = 15
-        Me.BunifuImageButton6.TabStop = False
-        Me.BunifuImageButton6.Zoom = 10
-        '
-        'BunifuImageButton5
-        '
-        Me.BunifuImageButton5.BackColor = System.Drawing.Color.BlueViolet
-        Me.BunifuImageButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BunifuImageButton5.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.trash_o
-        Me.BunifuImageButton5.ImageActive = Nothing
-        Me.BunifuImageButton5.Location = New System.Drawing.Point(4, 3)
-        Me.BunifuImageButton5.Name = "BunifuImageButton5"
-        Me.BunifuImageButton5.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuImageButton5.Size = New System.Drawing.Size(20, 20)
-        Me.BunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton5.TabIndex = 15
-        Me.BunifuImageButton5.TabStop = False
-        Me.BunifuImageButton5.Zoom = 10
-        '
-        'BunifuImageButton4
-        '
-        Me.BunifuImageButton4.BackColor = System.Drawing.Color.BlueViolet
-        Me.BunifuImageButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BunifuImageButton4.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.save
-        Me.BunifuImageButton4.ImageActive = Nothing
-        Me.BunifuImageButton4.Location = New System.Drawing.Point(4, 3)
-        Me.BunifuImageButton4.Name = "BunifuImageButton4"
-        Me.BunifuImageButton4.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuImageButton4.Size = New System.Drawing.Size(20, 20)
-        Me.BunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton4.TabIndex = 15
-        Me.BunifuImageButton4.TabStop = False
-        Me.BunifuImageButton4.Zoom = 10
-        '
-        'BunifuImageButton2
-        '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.BlueViolet
-        Me.BunifuImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BunifuImageButton2.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.edit
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(4, 3)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Padding = New System.Windows.Forms.Padding(5)
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(20, 20)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 15
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.pemkot_jpeg11
@@ -582,19 +595,6 @@ Partial Class FormPemeriksaanBarang
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(702, 3)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(27, 17)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 8
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
         '
         'FormPemeriksaanBarang
         '
@@ -630,17 +630,23 @@ Partial Class FormPemeriksaanBarang
         Me.Text = "FormPemeriksaanBarang"
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
+        CType(Me.BunifuImageButton7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        CType(Me.BunifuImageButton6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
+        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -656,13 +662,7 @@ Partial Class FormPemeriksaanBarang
         Me.Panel13.ResumeLayout(False)
         Me.Panel13.PerformLayout()
         Me.Panel14.ResumeLayout(False)
-        CType(Me.BunifuImageButton7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

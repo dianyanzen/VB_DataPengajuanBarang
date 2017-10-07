@@ -25,4 +25,30 @@ C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Ba
 C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPermintaanBarang.resources
 C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.cache
 C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.compiled
-C:\Users\Dian Yanzen\documents\visual studio 2013\Projects\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\db_barang.mdb
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.exe.config
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.exe
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.xml
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.pdb
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.exe
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.pdb
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Aplikasi Pengajuan Barang.xml
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\Bunifu_UI_v1.4.dll
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\bin\Debug\MetroFramework.Design.dll
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.vbprojResolveAssemblyReference.cache
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataPemohonvb.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormDataRegistrasiUser.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormLogin.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormMaster.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPemeriksaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPenerimaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.FormPermintaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanDataBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanDataPemohon.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPemeriksaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPenerimaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.LaporanPermintaanBarang.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi_Pengajuan_Barang.Resources.resources
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\Aplikasi Pengajuan Barang.vbproj.GenerateResource.Cache
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.cache
+E:\Data\Piksi\Aplikasi Pengajuan Barang\Aplikasi Pengajuan Barang\obj\Debug\RdlCompile.compiled
