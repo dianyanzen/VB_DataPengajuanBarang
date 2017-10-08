@@ -56,7 +56,7 @@ Public Class LaporanDataBarang
         konek()
         Me.ReportViewer1.Clear()
         Try
-            Dim nowdate As String = String.Format("{0:MM/dd/yyyy}", DateTime.Now)
+            Dim nowdate As String = String.Format("{0:d/MM/yyyy}", DateTime.Now)
             'Dim Akhir = tglakhir.Value.ToString("MM/d/yyyy")
             'Dim Awal = tglawal.Value.ToString("MM/d/yyyy")
             Dim Akhir = tglakhir.Value.ToString("d/MM/yyyy")
@@ -71,7 +71,7 @@ Public Class LaporanDataBarang
                 query = query + " and jenis_barang = '" & cmbjenisbarang.Text & "'"
             End If
             query = query + " order by kode_barang asc"
-            MsgBox(query)
+            'MsgBox(query)
             dtadapter = New OleDb.OleDbDataAdapter(query, koneksi)
             ttabel.Clear()
             ttabel = New DataTable
@@ -87,10 +87,6 @@ Public Class LaporanDataBarang
             tampil()
         End Try
 
-    End Sub
-    Private Sub LaporanDataBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        bersih()
-        tampil()
     End Sub
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
@@ -109,6 +105,15 @@ Public Class LaporanDataBarang
     End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
+        cari()
+    End Sub
+
+    Private Sub LaporanDataBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        bersih()
+        tampil()
+    End Sub
+
+    Private Sub BunifuCustomLabel5_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel5.Click
         cari()
     End Sub
 End Class

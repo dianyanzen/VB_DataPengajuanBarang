@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Data_Penerimaan" targetNamespace="http://tempuri.org/Data_Penerimaan.xsd" xmlns:mstns="http://tempuri.org/Data_Penerimaan.xsd" xmlns="http://tempuri.org/Data_Penerimaan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Data_Penerimaan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Data_Penerimaan" msprop:Generator_UserDSName="Data_Penerimaan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data_Penerimaan" msprop:Generator_TableClassName="Data_PenerimaanDataTable" msprop:Generator_TableVarName="tableData_Penerimaan" msprop:Generator_RowChangedName="Data_PenerimaanRowChanged" msprop:Generator_TablePropName="_Data_Penerimaan" msprop:Generator_RowDeletingName="Data_PenerimaanRowDeleting" msprop:Generator_RowChangingName="Data_PenerimaanRowChanging" msprop:Generator_RowEvHandlerName="Data_PenerimaanRowChangeEventHandler" msprop:Generator_RowDeletedName="Data_PenerimaanRowDeleted" msprop:Generator_RowClassName="Data_PenerimaanRow" msprop:Generator_UserTableName="Data_Penerimaan" msprop:Generator_RowEvArgName="Data_PenerimaanRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kode_penerimaan" msprop:Generator_ColumnVarNameInTable="columnkode_penerimaan" msprop:Generator_ColumnPropNameInRow="kode_penerimaan" msprop:Generator_ColumnPropNameInTable="kode_penerimaanColumn" msprop:Generator_UserColumnName="kode_penerimaan" type="xs:string" minOccurs="0" />
+              <xs:element name="nama_barang" msprop:Generator_ColumnVarNameInTable="columnnama_barang" msprop:Generator_ColumnPropNameInRow="nama_barang" msprop:Generator_ColumnPropNameInTable="nama_barangColumn" msprop:Generator_UserColumnName="nama_barang" type="xs:string" minOccurs="0" />
+              <xs:element name="nama_penerima" msprop:Generator_ColumnVarNameInTable="columnnama_penerima" msprop:Generator_ColumnPropNameInRow="nama_penerima" msprop:Generator_ColumnPropNameInTable="nama_penerimaColumn" msprop:Generator_UserColumnName="nama_penerima" type="xs:string" minOccurs="0" />
+              <xs:element name="status_pemeriksaan" msprop:Generator_ColumnVarNameInTable="columnstatus_pemeriksaan" msprop:Generator_ColumnPropNameInRow="status_pemeriksaan" msprop:Generator_ColumnPropNameInTable="status_pemeriksaanColumn" msprop:Generator_UserColumnName="status_pemeriksaan" type="xs:string" minOccurs="0" />
+              <xs:element name="kode_pemeriksaan" msprop:Generator_ColumnVarNameInTable="columnkode_pemeriksaan" msprop:Generator_ColumnPropNameInRow="kode_pemeriksaan" msprop:Generator_ColumnPropNameInTable="kode_pemeriksaanColumn" msprop:Generator_UserColumnName="kode_pemeriksaan" type="xs:string" minOccurs="0" />
+              <xs:element name="jumlah" msprop:Generator_ColumnVarNameInTable="columnjumlah" msprop:Generator_ColumnPropNameInRow="jumlah" msprop:Generator_ColumnPropNameInTable="jumlahColumn" msprop:Generator_UserColumnName="jumlah" type="xs:string" minOccurs="0" />
+              <xs:element name="jenis_barang" msprop:Generator_ColumnVarNameInTable="columnjenis_barang" msprop:Generator_ColumnPropNameInRow="jenis_barang" msprop:Generator_ColumnPropNameInTable="jenis_barangColumn" msprop:Generator_UserColumnName="jenis_barang" type="xs:string" minOccurs="0" />
+              <xs:element name="status_penerimaan" msprop:Generator_ColumnVarNameInTable="columnstatus_penerimaan" msprop:Generator_ColumnPropNameInRow="status_penerimaan" msprop:Generator_ColumnPropNameInTable="status_penerimaanColumn" msprop:Generator_UserColumnName="status_penerimaan" type="xs:string" minOccurs="0" />
+              <xs:element name="tanggal_input" msprop:Generator_ColumnVarNameInTable="columntanggal_input" msprop:Generator_ColumnPropNameInRow="tanggal_input" msprop:Generator_ColumnPropNameInTable="tanggal_inputColumn" msprop:Generator_UserColumnName="tanggal_input" type="xs:string" minOccurs="0" />
+              <xs:element name="diinput_oleh" msprop:Generator_ColumnVarNameInTable="columndiinput_oleh" msprop:Generator_ColumnPropNameInRow="diinput_oleh" msprop:Generator_ColumnPropNameInTable="diinput_olehColumn" msprop:Generator_UserColumnName="diinput_oleh" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

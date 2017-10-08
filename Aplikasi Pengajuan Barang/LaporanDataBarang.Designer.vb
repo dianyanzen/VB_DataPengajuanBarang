@@ -24,7 +24,7 @@ Partial Class LaporanDataBarang
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LaporanDataBarang))
-        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -158,9 +158,9 @@ Partial Class LaporanDataBarang
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.Location = New System.Drawing.Point(218, 46)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(45, 13)
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(68, 13)
         Me.BunifuCustomLabel4.TabIndex = 76
-        Me.BunifuCustomLabel4.Text = "Jabatan"
+        Me.BunifuCustomLabel4.Text = "Jenis Barang"
         '
         'BunifuCustomLabel2
         '
@@ -244,9 +244,9 @@ Partial Class LaporanDataBarang
         'ReportViewer1
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Bottom
-        ReportDataSource2.Name = "Data_Barang"
-        ReportDataSource2.Value = Nothing
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
+        ReportDataSource1.Name = "Data_Barang"
+        ReportDataSource1.Value = Nothing
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Aplikasi_Pengajuan_Barang.Data_Barangrdlc.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 146)
         Me.ReportViewer1.Name = "ReportViewer1"

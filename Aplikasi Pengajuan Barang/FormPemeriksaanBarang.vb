@@ -170,7 +170,7 @@ Public Class FormPemeriksaanBarang
                 If rd.Read Then
                     conn.Close()
                     conn.Open()
-                    OleDb = "update data_pemeriksaan set nama_barang ='" & txtjenisbarang.Text & "' , nama_pemohon ='" & txtnamapemohon.Text & "',kode_permintaan ='" & cmbkodepermintaan.Text & "', jumlah ='" & txtjumlah.Text & "', jenis_barang ='" & txtjenisbarang.Text & "', status_pemeriksaan ='" & stat_pm & "'  where kode_pemeriksaan ='" & txtkodepemeriksaan.Text & "'"
+                    OleDb = "update data_pemeriksaan set nama_barang ='" & txtnamabarang.Text & "' , nama_pemohon ='" & txtnamapemohon.Text & "',kode_permintaan ='" & cmbkodepermintaan.Text & "', jumlah ='" & txtjumlah.Text & "', jenis_barang ='" & txtjenisbarang.Text & "', status_pemeriksaan ='" & stat_pm & "'  where kode_pemeriksaan ='" & txtkodepemeriksaan.Text & "'"
                     cmd = New OleDb.OleDbCommand(OleDb, conn)
                     cmd.ExecuteNonQuery()
                     MsgBox("Data Berhasil Di Rubah", MsgBoxStyle.Information, "Update Data")

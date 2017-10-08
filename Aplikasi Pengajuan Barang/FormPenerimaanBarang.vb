@@ -112,12 +112,17 @@ Public Class FormPenerimaanBarang
             End While
             cmbkodepemeriksaan.Text = "--Pilih Kode Pemeriksaan--"
             conn.Close()
+           
         Catch ex As Exception
             MessageBox.Show("Koneksi Gagal !!!, karena " & ex.Message)
         End Try
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If txtstatuspemeriksaan.Text = "Ditolak" Then
+            CheckBox2.Checked = False
+            MsgBox("Data Yang Ditolak Tidak Dapat Di Kirim", MsgBoxStyle.Critical, "Kesalahan")
+        End If
         If CheckBox2.Checked = True Then
             CheckBox3.Checked = False
             stat_prm = "Belum Dikirim"
@@ -342,6 +347,8 @@ Public Class FormPenerimaanBarang
     Private Sub cmbkodepemeriksaan_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles cmbkodepemeriksaan.SelectedIndexChanged
         konek()
         Try
+            CheckBox2.Checked = False
+            CheckBox3.Checked = False
             If cmbkodepemeriksaan.Text <> "--Pilih Kode Pemeriksaan--" And is_search = False Then
                 OleDb = "select top 1 nama_pemohon, nama_barang, jenis_barang, jumlah, status_pemeriksaan from data_pemeriksaan where kode_pemeriksaan = '" & cmbkodepemeriksaan.Text & "'"
                 conn.Open()

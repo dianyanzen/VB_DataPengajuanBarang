@@ -60,7 +60,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -95,7 +94,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -130,7 +128,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -165,7 +162,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -200,7 +196,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -235,7 +230,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -460,7 +454,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Data_Barang</DataSetName>
-        <Top>0.85292in</Top>
+        <Top>1.47792in</Top>
         <Left>0.29042in</Left>
         <Height>0.5in</Height>
         <Width>6in</Width>
@@ -476,7 +470,7 @@
         <Sizing>Fit</Sizing>
         <Top>0.125in</Top>
         <Left>1.93625in</Left>
-        <Height>0.65625in</Height>
+        <Height>1.1875in</Height>
         <Width>2.70833in</Width>
         <ZIndex>1</ZIndex>
         <Style>

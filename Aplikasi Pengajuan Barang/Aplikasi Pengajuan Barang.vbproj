@@ -93,6 +93,32 @@
     <Compile Include="Data_Barang.vb">
       <DependentUpon>Data_Barang.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data_Pemeriksaan.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Pemeriksaan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Pemohon.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Pemohon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Pemohon.vb">
+      <DependentUpon>Data_Pemohon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Penerimaan.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Penerimaan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Penerimaan.vb">
+      <DependentUpon>Data_Penerimaan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Permintaan.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Permintaan.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormDataBarang.Designer.vb">
       <DependentUpon>FormDataBarang.vb</DependentUpon>
     </Compile>
@@ -189,6 +215,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Data_Barangrdlc.rdlc" />
+    <EmbeddedResource Include="Data_Pemeriksaan.rdlc" />
+    <EmbeddedResource Include="Data_Pemohon.rdlc" />
+    <EmbeddedResource Include="Data_Penerimaan.rdlc" />
+    <EmbeddedResource Include="Data_Permintaan.rdlc" />
     <EmbeddedResource Include="FormDataBarang.resx">
       <DependentUpon>FormDataBarang.vb</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +276,50 @@
     </None>
     <None Include="Data_Barang.xss">
       <DependentUpon>Data_Barang.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Pemeriksaan.xsc">
+      <DependentUpon>Data_Pemeriksaan.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Pemeriksaan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Pemeriksaan.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data_Pemeriksaan.xss">
+      <DependentUpon>Data_Pemeriksaan.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Pemohon.xsc">
+      <DependentUpon>Data_Pemohon.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Pemohon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Pemohon.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data_Pemohon.xss">
+      <DependentUpon>Data_Pemohon.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Penerimaan.xsc">
+      <DependentUpon>Data_Penerimaan.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Penerimaan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Penerimaan.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data_Penerimaan.xss">
+      <DependentUpon>Data_Penerimaan.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Permintaan.xsc">
+      <DependentUpon>Data_Permintaan.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Permintaan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Permintaan.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data_Permintaan.xss">
+      <DependentUpon>Data_Permintaan.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

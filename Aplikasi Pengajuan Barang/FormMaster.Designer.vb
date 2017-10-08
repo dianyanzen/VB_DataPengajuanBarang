@@ -26,9 +26,11 @@ Partial Class FormMaster
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMaster))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuFlatButton12 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton11 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -42,15 +44,13 @@ Partial Class FormMaster
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
-        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel1.SuspendLayout()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -68,19 +68,6 @@ Partial Class FormMaster
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(876, 43)
         Me.Panel1.TabIndex = 1
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(837, 3)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(27, 23)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 8
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
         '
         'BunifuCustomLabel3
         '
@@ -113,6 +100,28 @@ Partial Class FormMaster
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(247, 626)
         Me.Panel2.TabIndex = 2
+        '
+        'FileSystemWatcher1
+        '
+        Me.FileSystemWatcher1.EnableRaisingEvents = True
+        Me.FileSystemWatcher1.SynchronizingObject = Me
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me.Panel1
+        Me.BunifuDragControl1.Vertical = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.bgsplash_1
+        Me.PictureBox2.Location = New System.Drawing.Point(244, 43)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(632, 626)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
         '
         'BunifuFlatButton12
         '
@@ -178,16 +187,16 @@ Partial Class FormMaster
         Me.BunifuFlatButton6.BackColor = System.Drawing.Color.BlueViolet
         Me.BunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton6.BorderRadius = 0
-        Me.BunifuFlatButton6.ButtonText = "Laporan Penerimaan Barang"
+        Me.BunifuFlatButton6.ButtonText = "      Laporan Penerimaan Barang"
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton6.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton6.Iconimage = CType(resources.GetObject("BunifuFlatButton6.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton6.Iconimage = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.edit1
         Me.BunifuFlatButton6.Iconimage_right = Nothing
         Me.BunifuFlatButton6.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton6.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton6.IconZoom = 90.0R
+        Me.BunifuFlatButton6.IconZoom = 50.0R
         Me.BunifuFlatButton6.IsTab = False
         Me.BunifuFlatButton6.Location = New System.Drawing.Point(0, 469)
         Me.BunifuFlatButton6.Margin = New System.Windows.Forms.Padding(5)
@@ -207,16 +216,16 @@ Partial Class FormMaster
         Me.BunifuFlatButton7.BackColor = System.Drawing.Color.BlueViolet
         Me.BunifuFlatButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton7.BorderRadius = 0
-        Me.BunifuFlatButton7.ButtonText = "Laporan Pemeriksaan Barang"
+        Me.BunifuFlatButton7.ButtonText = "      Laporan Pemeriksaan Barang"
         Me.BunifuFlatButton7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton7.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton7.Iconimage = CType(resources.GetObject("BunifuFlatButton7.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton7.Iconimage = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.check_square_o
         Me.BunifuFlatButton7.Iconimage_right = Nothing
         Me.BunifuFlatButton7.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton7.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton7.IconZoom = 90.0R
+        Me.BunifuFlatButton7.IconZoom = 50.0R
         Me.BunifuFlatButton7.IsTab = False
         Me.BunifuFlatButton7.Location = New System.Drawing.Point(0, 427)
         Me.BunifuFlatButton7.Margin = New System.Windows.Forms.Padding(5)
@@ -236,16 +245,16 @@ Partial Class FormMaster
         Me.BunifuFlatButton8.BackColor = System.Drawing.Color.BlueViolet
         Me.BunifuFlatButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton8.BorderRadius = 0
-        Me.BunifuFlatButton8.ButtonText = "Laporan  Permintaan Barang"
+        Me.BunifuFlatButton8.ButtonText = "      Laporan  Permintaan Barang"
         Me.BunifuFlatButton8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton8.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton8.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton8.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton8.Iconimage = CType(resources.GetObject("BunifuFlatButton8.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton8.Iconimage = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.shopping_bag
         Me.BunifuFlatButton8.Iconimage_right = Nothing
         Me.BunifuFlatButton8.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton8.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton8.IconZoom = 90.0R
+        Me.BunifuFlatButton8.IconZoom = 50.0R
         Me.BunifuFlatButton8.IsTab = False
         Me.BunifuFlatButton8.Location = New System.Drawing.Point(0, 386)
         Me.BunifuFlatButton8.Margin = New System.Windows.Forms.Padding(5)
@@ -265,16 +274,16 @@ Partial Class FormMaster
         Me.BunifuFlatButton9.BackColor = System.Drawing.Color.BlueViolet
         Me.BunifuFlatButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton9.BorderRadius = 0
-        Me.BunifuFlatButton9.ButtonText = "Laporan Data Pemohon"
+        Me.BunifuFlatButton9.ButtonText = "      Laporan Data Pemohon"
         Me.BunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton9.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton9.Iconimage = CType(resources.GetObject("BunifuFlatButton9.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton9.Iconimage = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.street_view
         Me.BunifuFlatButton9.Iconimage_right = Nothing
         Me.BunifuFlatButton9.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton9.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton9.IconZoom = 90.0R
+        Me.BunifuFlatButton9.IconZoom = 50.0R
         Me.BunifuFlatButton9.IsTab = False
         Me.BunifuFlatButton9.Location = New System.Drawing.Point(0, 343)
         Me.BunifuFlatButton9.Margin = New System.Windows.Forms.Padding(5)
@@ -294,16 +303,16 @@ Partial Class FormMaster
         Me.BunifuFlatButton10.BackColor = System.Drawing.Color.BlueViolet
         Me.BunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton10.BorderRadius = 0
-        Me.BunifuFlatButton10.ButtonText = "Laporan Data Barang"
+        Me.BunifuFlatButton10.ButtonText = "      Laporan Data Barang"
         Me.BunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton10.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton10.ForeColor = System.Drawing.Color.White
         Me.BunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton10.Iconimage = CType(resources.GetObject("BunifuFlatButton10.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton10.Iconimage = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.shopping_cart
         Me.BunifuFlatButton10.Iconimage_right = Nothing
         Me.BunifuFlatButton10.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton10.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton10.IconZoom = 90.0R
+        Me.BunifuFlatButton10.IconZoom = 50.0R
         Me.BunifuFlatButton10.IsTab = False
         Me.BunifuFlatButton10.Location = New System.Drawing.Point(0, 300)
         Me.BunifuFlatButton10.Margin = New System.Windows.Forms.Padding(5)
@@ -473,27 +482,18 @@ Partial Class FormMaster
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'FileSystemWatcher1
+        'BunifuImageButton1
         '
-        Me.FileSystemWatcher1.EnableRaisingEvents = True
-        Me.FileSystemWatcher1.SynchronizingObject = Me
-        '
-        'BunifuDragControl1
-        '
-        Me.BunifuDragControl1.Fixed = True
-        Me.BunifuDragControl1.Horizontal = True
-        Me.BunifuDragControl1.TargetControl = Me.Panel1
-        Me.BunifuDragControl1.Vertical = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Aplikasi_Pengajuan_Barang.My.Resources.Resources.bgsplash_1
-        Me.PictureBox2.Location = New System.Drawing.Point(244, 43)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(632, 626)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(837, 3)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(27, 23)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 8
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
         '
         'FormMaster
         '
@@ -510,11 +510,11 @@ Partial Class FormMaster
         Me.Text = "FormMaster"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

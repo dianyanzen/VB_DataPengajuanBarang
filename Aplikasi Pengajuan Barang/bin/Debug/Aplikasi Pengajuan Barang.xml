@@ -27,11 +27,19 @@ AplikasiPengajuanBarang
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.check_square_o">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.dashboard">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.edit1">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -79,7 +87,19 @@ AplikasiPengajuanBarang
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.shopping_bag">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.shopping_cart">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.sign_out">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Aplikasi_Pengajuan_Barang.My.Resources.Resources.street_view">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -107,6 +127,22 @@ AplikasiPengajuanBarang
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Permintaan.Data_PermintaanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Permintaan.Data_PermintaanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Permintaan.Data_PermintaanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Permintaan">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
 </member><member name="T:Aplikasi_Pengajuan_Barang.Data_Barang.Data_BarangDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -120,6 +156,54 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member><member name="T:Aplikasi_Pengajuan_Barang.Data_Barang">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemeriksaan.Data_PemeriksaanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemeriksaan.Data_PemeriksaanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemeriksaan.Data_PemeriksaanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemeriksaan">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemohon.Data_PemohonDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemohon.Data_PemohonRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemohon.Data_PemohonRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Pemohon">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Penerimaan.Data_PenerimaanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Penerimaan.Data_PenerimaanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Penerimaan.Data_PenerimaanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_Pengajuan_Barang.Data_Penerimaan">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
